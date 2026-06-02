@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'dvd-rental-prediction',
+    title: 'Predicting DVD rental duration with regression models',
+    date: '1 Jun 2026',
+    summary:
+      'How I used Lasso feature selection and five regression models to predict how long a customer will rent a DVD, hitting an MSE of 2.50 against a target of 3.',
+    tags: ['Python', 'scikit-learn', 'Regression', 'Lasso', 'Random Forest', 'Feature Engineering'],
+  },
+  {
     slug: 'penguin-clustering',
     title: 'Can unsupervised learning identify penguin species on its own?',
     date: '4 May 2026',

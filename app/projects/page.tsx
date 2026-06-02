@@ -1,6 +1,23 @@
 const projects = [
   {
+    title: 'DVD Rental Duration Prediction',
+    date: 'Jun 2026',
+    description:
+      'Built a regression pipeline for a DVD rental company to predict how many days a customer would keep a rental, supporting inventory planning. Applied Lasso with cross-validated alpha tuning to reduce a wide feature set to three predictors, then trained and tuned five models. All tuned tree-based models beat the MSE target of 3, with the Decision Tree, Bagging Regressor, and Random Forest each achieving MSE 2.50.',
+    tags: ['Python', 'scikit-learn', 'Lasso', 'Decision Tree', 'Random Forest', 'Gradient Boosting', 'Feature Engineering', 'Regression'],
+    github: 'https://github.com/AnesTheDataGuy/dvd-rental-duration-prediction',
+  },
+  {
+    title: 'Clustering Antarctic Penguin Species',
+    date: 'May 2026',
+    description:
+      'Applied unsupervised machine learning to recover species labels for Antarctic penguin observations where no ground-truth labels were recorded. Used t-SNE dimensionality reduction to visualise the data, revealing ~6 clusters driven by both species and sex variation. Applied the elbow method to confirm k=3 as the optimal cluster count, then fitted K-Means to assign each observation to one of three species — Adelie, Chinstrap, or Gentoo. Validated results with coloured t-SNE plots split by sex, confirming consistent species separation across both male and female penguins.',
+    tags: ['Python', 'scikit-learn', 'K-Means', 't-SNE', 'pandas', 'matplotlib', 'Unsupervised Learning', 'Data Visualisation'],
+    github: 'https://github.com/AnesTheDataGuy/penguin-clustering',
+  },
+  {
     title: 'Automated AWS ETL Pipeline',
+    date: 'Sep 2024',
     description:
       'Designed and built a fully automated, end-to-end data engineering pipeline on AWS to ingest, transform, and serve data from a simulated operational database into a cloud-based data warehouse. The pipeline uses scheduled Lambda functions to incrementally extract data from a relational source, storing immutable snapshots in a structured S3 data lake. A transformation layer remodels raw data into a star schema optimised for analytics, outputting Parquet files for efficient querying. A loading process keeps the warehouse updated within 30-minute windows. Built with 90%+ test coverage, CI/CD via GitHub Actions, and security scanning throughout.',
     tags: ['Python', 'AWS', 'S3', 'Lambda', 'CloudWatch', 'EventBridge', 'SQL', 'Star Schema', 'Parquet', 'CI/CD', 'GitHub Actions'],
@@ -27,9 +44,14 @@ export default function Projects() {
             className="p-6 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
           >
             <div className="flex items-start justify-between gap-4 mb-4">
-              <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                {project.title}
-              </h2>
+              <div>
+                <span className="text-xs text-zinc-400 dark:text-zinc-500 mb-1 block">
+                  {project.date}
+                </span>
+                <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                  {project.title}
+                </h2>
+              </div>
               <a
                 href={project.github}
                 target="_blank"
