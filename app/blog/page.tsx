@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'titanic-survival',
+    title: 'Predicting Titanic survival: my first Kaggle ML project',
+    date: '6 Jun 2026',
+    summary:
+      'How I built a Gradient Boosting classifier to predict Titanic passenger survival, achieving a Kaggle score of 0.78, and what the feature analysis revealed about who was most likely to survive.',
+    tags: ['Python', 'scikit-learn', 'Classification', 'Gradient Boosting', 'Kaggle', 'Feature Engineering'],
+  },
+  {
     slug: 'dvd-rental-prediction',
     title: 'Predicting DVD rental duration with regression models',
     date: '1 Jun 2026',

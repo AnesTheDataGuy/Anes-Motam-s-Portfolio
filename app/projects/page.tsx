@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: 'Titanic Survival Prediction',
+    date: 'Jun 2026',
+    description:
+      'My first Kaggle machine learning project. Built a full classification pipeline to predict Titanic passenger survival, comparing five models before selecting a tuned Gradient Boosting classifier. Achieved a Kaggle score of 0.78. Feature importance analysis using logistic regression coefficients confirmed that sex, cabin deck, and port of embarkation were the strongest predictors -- consistent with the historical record.',
+    tags: ['Python', 'scikit-learn', 'Classification', 'Gradient Boosting', 'Random Forest', 'Feature Engineering', 'Kaggle'],
+    github: 'https://github.com/AnesTheDataGuy/titanic-survival-prediction',
+  },
+  {
     title: 'DVD Rental Duration Prediction',
     date: 'Jun 2026',
     description:
