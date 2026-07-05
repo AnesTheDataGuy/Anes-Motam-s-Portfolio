@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'history-of-data-science',
+    title: 'A brief history of data science',
+    date: '5 Jul 2026',
+    summary:
+      'From least squares in the 19th century to Python and modern machine learning — a short tour of how data science became what it is today.',
+    tags: ['Data Science', 'Machine Learning', 'History', 'Statistics'],
+  },
+  {
     slug: 'titanic-survival',
     title: 'Predicting Titanic survival: my first Kaggle ML project',
     date: '6 Jun 2026',
