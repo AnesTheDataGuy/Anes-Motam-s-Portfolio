@@ -85,7 +85,7 @@ export default function KNearestNeighbours() {
 
         <p>
           On the left, the black x is a new observation. KNN draws a circle just big enough to capture its
-          K nearest neighbours (here, mostly blue), and assigns the majority class. Do this for every point
+          three nearest neighbours (here, mostly blue), and assigns the majority class. Do this for every point
           in the space and you get the jagged black boundary on the right, the line that separates &ldquo;KNN
           says blue&rdquo; from &ldquo;KNN says orange&rdquo;.
         </p>
