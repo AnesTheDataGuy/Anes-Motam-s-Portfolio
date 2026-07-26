@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'k-nearest-neighbours',
+    title: 'K-Nearest Neighbours: how many neighbours should you actually trust?',
+    date: '26 Jul 2026',
+    summary:
+      'A plain-English introduction to K-Nearest Neighbours, and why picking K is really a balancing act between overfitting and underfitting.',
+    tags: ['Python', 'K-Nearest Neighbours', 'Classification', 'Bias-Variance Tradeoff'],
+  },
+  {
     slug: 'history-of-data-science',
     title: 'A brief history of data science',
     date: '5 Jul 2026',
